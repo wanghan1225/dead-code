@@ -7,7 +7,7 @@
 - eslint-plugin-autofix-fork：通过eslint的fixer，修复问题
 
 使用：
-- 命令`dead-code`或`dc`会根据当前目录的tsconfig.json文件中的`include`字段，检测出后缀为`.js, .jsx, .ts, .tsx`文件中未使用的exports，包括变量、函数、函数形参、import、type、interface、enum
+- 命令`dead-code`或`dc`会根据当前目录的tsconfig.json文件中的`include`字段，检测出后缀为`.js, .jsx, .ts, .tsx`文件中未使用的exports，包括变量、函数、函数形参、import、type、interface、enum，以及项目中未使用的文件（仅支持`.js, .jsx, .ts, .tsx`文件）
 
 | 命令 | 描述 | 默认值 |
 | :------:| :------: | :------: |

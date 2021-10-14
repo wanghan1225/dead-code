@@ -18,13 +18,13 @@ function createCli({ filenameArr, fix, include }) {
     parser: '@typescript-eslint/parser',
     plugins: ['@typescript-eslint', 'deadvars', 'autofix-fork'],
     envs: ['browser', 'es2021', 'node'],
-    cwd: workDir,
+    cwd: path.join(__dirname, '../'),
     ignorePattern: ['**/*.d.ts', '**/*.test.ts', '**/*.test.js', '**/*.spec.ts', '**/*.spec.js'],
     extensions: ['.ts', 'tsx', '.js', 'jsx'],
   })
   console.log(chalk.red('==================================================unUsedVars==================================================='))
   try {
-    const report = cli.executeOnFiles(include)
+    const report = cli.executeOnFiles(include || [])
     let index = 1
     const allMessages = report.results.reduce((prev, { filePath, messages }) => {
       if (!messages.length) return prev

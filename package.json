@@ -1,5 +1,5 @@
 {
-  "name": "dead-code",
+  "name": "del-dead-code",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,7 +19,7 @@
     "chalk": "^4.1.2",
     "commander": "^8.2.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-autofix-fork": "0.0.53",
+    "eslint-plugin-autofix-fork": "0.0.54",
     "eslint-plugin-deadvars": "^1.0.31",
     "fork-ts-unused-exports": "0.0.3",
     "lodash": "^4.17.21",

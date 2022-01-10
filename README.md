@@ -1,4 +1,6 @@
 ## 废弃代码删除工具dead-code
+描述：这是一个删除`废弃代码`的`命令行工具`。
+
 技术栈：ts-unused-exports + eslint-plugin + fixer + commander
 
 相关依赖说明：

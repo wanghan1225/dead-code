@@ -1,5 +1,5 @@
 {
-  "name": "del-dead-code",
+  "name": "dead-code-ts",
   "version": "1.0.1",
   "description": "",
   "main": "index.js",

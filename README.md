@@ -1,5 +1,5 @@
 ## description
-[del-dead-code](https://www.npmjs.com/package/del-dead-code)：这是一个提供给`React + ts`项目的一个`废弃代码删除工具`。
+[dead-code-ts](https://www.npmjs.com/package/dead-code-ts)：这是一个提供给`React + ts`项目的一个`废弃代码删除工具`。
 
 技术栈：ts-unused-exports + eslint-plugin + fixer + commander
 
@@ -12,9 +12,9 @@
 
 安装：
 ```
-npm i del-dead-code -g
+npm i dead-code-ts -g
 ```
-- 安装`del-dead-code`会注册`dead-code`和`dc`命令，它们会根据当前目录的`tsconfig.json`文件中的`include`字段，检测出后缀为`.js, .jsx, .ts, .tsx`文件中未使用的exports，包括变量、函数、函数形参、import、type、interface、enum，以及项目中未使用的文件（目前仅支持`.js, .jsx, .ts, .tsx`文件）
+- 安装`dead-code-ts`会注册`dead-code`和`dc`命令，它们会根据当前目录的`tsconfig.json`文件中的`include`字段，检测出后缀为`.js, .jsx, .ts, .tsx`文件中未使用的exports，包括变量、函数、函数形参、import、type、interface、enum，以及项目中未使用的文件（目前仅支持`.js, .jsx, .ts, .tsx`文件）
 
 | 命令 | 描述 | 默认值 |
 | :------:| :------: | :------: |

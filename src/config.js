@@ -7,7 +7,7 @@ const workDir = process.cwd()
 // 白名单
 const whiteList = createWhiteList(workDir)
 
-const ignoreFiles = '(\\.(test|spec)\\.[tj]s$)|(\\.md$)|(\\.d\\.ts$)'
+const ignoreFiles = '(\\.(test|spec)\\.[tj]sx?$)|(\\.md$)|(\\.d\\.ts$)'
 
 
 module.exports = {

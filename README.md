@@ -1,5 +1,5 @@
-## 废弃代码删除工具dead-code
-描述：这是一个删除`废弃代码`的`命令行工具`。
+## 简介
+描述：这是一个提供给`React + ts`项目的一个`废弃代码删除工具`。
 
 技术栈：ts-unused-exports + eslint-plugin + fixer + commander
 
@@ -8,15 +8,20 @@
 - eslint-plugin-deadvars：配合fork-ts-unused-exports检测出未使用的变量
 - eslint-plugin-autofix-fork：通过eslint的fixer，修复问题
 
-使用：
+## 使用
+
+安装：
+```
+npm i del-dead-code -g
+```
 - 命令`dead-code`或`dc`会根据当前目录的tsconfig.json文件中的`include`字段，检测出后缀为`.js, .jsx, .ts, .tsx`文件中未使用的exports，包括变量、函数、函数形参、import、type、interface、enum，以及项目中未使用的文件（仅支持`.js, .jsx, .ts, .tsx`文件）
 
 | 命令 | 描述 | 默认值 |
 | :------:| :------: | :------: |
-| dc --f 或 dc --fix | 是否自动修复检测问题 | false |
+| dc -f 或 dc --fix | 是否自动修复检测问题 | false |
 | dc -p [path] 或 dc --path [path] | tsconfig的路径 | 当前工作目录 + tsconfig.json |
-| dc --d 或 dc --del | 是否删除所有未使用的文件 | false |
-| dc --ded 或 dc --delEmptyDirectory | 是否删除因删除未使用的文件产生的空文件夹 | false |
+| dc -d 或 dc --del | 是否删除所有未使用的文件 | false |
+| dc -ded 或 dc --delEmptyDirectory | 是否删除因删除未使用的文件产生的空文件夹 | false |
 
 也可以使用`dc --help`命令查看可传入的参数
 
@@ -24,5 +29,5 @@
 
 传入`ts-unused-exports`的默认参数：
 - excludeDeclarationFiles: true
-- ignoreFiles: `(\\.(test|spec)\\.[tj]s$)|(\\.md$)|(\\.d\\.ts$)\`
+- ignoreFiles: `(\\.(test|spec)\\.[tj]sx?$)|(\\.md$)|(\\.d\\.ts$)\`
 

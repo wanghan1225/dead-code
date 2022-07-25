@@ -24,12 +24,13 @@ function createCli({ filenameArr, fix, include }) {
   })
   console.log(chalk.red('==================================================unUsedVars==================================================='))
   try {
+    include = include.map(p => path.resolve(workDir, p))
     const report = cli.executeOnFiles(include || [])
     let index = 1
     const allMessages = report.results.reduce((prev, { filePath, messages }) => {
+      messages = messages.filter(({ ruleId }) => ruleId !== 'autofix-fork/no-unused-vars')
       if (!messages.length) return prev
       console.log(chalk.green(`${index++}: ${path.relative(workDir, filePath)}`))
-      messages = messages.filter(({ ruleId }) => ruleId !== 'autofix-fork/no-unused-vars')
       messages.forEach(({ message, ruleId, line, column }) => {
         console.log(`${chalk.yellow(`ruleId: ${ruleId}`)}, ${chalk.red(`message: ${message}`)}, ${chalk.green(`line: ${line}, column: ${column}`)}`)
       })

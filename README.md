@@ -1,14 +1,14 @@
-## 简介
-描述：这是一个提供给`React + ts`项目的一个`废弃代码删除工具`。
+## description
+[del-dead-code](https://www.npmjs.com/package/del-dead-code)：这是一个提供给`React + ts`项目的一个`废弃代码删除工具`。
 
 技术栈：ts-unused-exports + eslint-plugin + fixer + commander
 
 相关依赖说明：
-- fork-ts-unused-exports：用于检测未使用的exports
-- eslint-plugin-deadvars：配合fork-ts-unused-exports检测出未使用的变量
-- eslint-plugin-autofix-fork：通过eslint的fixer，修复问题
+- [fork-ts-unused-exports](https://www.npmjs.com/package/fork-ts-unused-exports)：用于检测未使用的exports
+- [eslint-plugin-deadvars](https://www.npmjs.com/package/eslint-plugin-deadvars)：配合fork-ts-unused-exports检测出未使用的变量
+- [eslint-plugin-autofix-fork](https://www.npmjs.com/package/eslint-plugin-autofix-fork)：通过eslint的fixer，修复问题
 
-## 使用
+## Install & Usage
 
 安装：
 ```

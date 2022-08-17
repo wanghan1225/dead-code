@@ -32,5 +32,5 @@ npm i dead-code-ts -g
 - ignoreFiles: `(\\.(test|spec)\\.[tj]sx?$)|(\\.md$)|(\\.d\\.ts$)\`
 
 ## link
-1. 设计文档[https://cold1225.github.io/my_blog/blogs/work/004.html]
-2. 工具总结[https://cold1225.github.io/my_blog/blogs/work/005.html]
+1. [设计文档](https://cold1225.github.io/my_blog/blogs/work/004.html)
+2. [工具总结](https://cold1225.github.io/my_blog/blogs/work/005.html)

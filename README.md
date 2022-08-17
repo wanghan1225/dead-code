@@ -1,7 +1,7 @@
 ## description
 [dead-code-ts](https://www.npmjs.com/package/dead-code-ts)：这是一个提供给`React + ts`项目的一个`废弃代码删除工具`。
 
-技术栈：ts-unused-exports + eslint-plugin + fixer + commander
+技术栈：fork-ts-unused-exports + eslint-plugin + fixer + commander
 
 相关依赖说明：
 - [fork-ts-unused-exports](https://www.npmjs.com/package/fork-ts-unused-exports)：用于检测未使用的exports
